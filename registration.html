@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head class="position-relative">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+  </head>
+  <body>
+    <div class="main container">
+      <i
+        role="button"
+        id="mode"
+        class="fa-regular fa-sun fa-xl p-3 position-absolute"
+        style="color: white; right: 20px !important; bottom: 20px"
+      ></i>
+      <div class="section row rounded-1">
+        <div class="col-lg-6 col-md-12 image">
+          <div class="images"></div>
+        </div>
+        <div class="col-lg-6 col-md-12 ccoll">
+          <div class="form">
+            <div class="tittle text-center text-white mb-4">
+              <img class="" src="./images/logo-sm.png" alt="" />
+              <h2>Register to Game Over</h2>
+            </div>
+            <form class="row">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  id="firstName"
+                  class="form-control"
+                  placeholder="First Name"
+                />
+                <ul class="alert alert-danger p-1 invalid-feedback">
+                  <li>First Name Is Required</li>
+                  <li>Minmum Length 2 and Maxmum 20</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  id="lastName"
+                  class="form-control"
+                  placeholder="Last Name"
+                />
+                <ul class="alert alert-danger p-1 invalid-feedback">
+                  <li>last Name Is Required</li>
+                  <li>Minmum Length 2 and Maxmum 20</li>
+                </ul>
+              </div>
+
+              <div class="col-12">
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                />
+                <ul class="alert alert-danger p-0 invalid-feedback">
+                  <li>Email Is Required</li>
+                  <li>InValid Email Formate</li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <input
+                  type="password"
+                  id="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+                <ul class="alert alert-danger p-1 invalid-feedback">
+                  <li>password Is Required</li>
+                  <li>
+                    Minimum eight characters, at least one letter and one
+                    number:
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <input
+                  type="number"
+                  id="age"
+                  class="form-control"
+                  placeholder="Enter Age"
+                />
+                <ul class="alert alert-danger p-0 invalid-feedback">
+                  <li>Age Is Required</li>
+                  <li>Minimum 10 Maxmum 80</li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <button
+                  type="submit"
+                  class="btn w-100 main-btn"
+                  id="btnRegister"
+                >
+                  Register
+                </button>
+                <p
+                  id="error"
+                  class="text-center"
+                  style="color: green !important"
+                ></p>
+                <p class="text-center text-white">
+                  Already a member? <span class="span" id="span"> LogIn ></span>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/registration.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./js/bootstrap.bundle.min.js.map"></script> -->
+  </body>
+</html>
